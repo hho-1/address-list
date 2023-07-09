@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>E-mail Book</title>
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <h1 class="text-center mt-5">E-Mail Address Book</h1>
+
+        <form class="w-50 m-auto mt-5">
+            <div class="mb-3">
+              <label for="isim" class="form-label">Name</label>
+              <input type="text" class="form-control" id="isim">
+              
+            </div>
+            <div class="mb-3">
+              <label for="soyisim" class="form-label">Surname</label>
+              <input type="email" class="form-control" id="soyisim">
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            
+            
+            <button type="submit" class="btn btn-primary m-auto mt-3">Save</button>
+          </form>
+          <br>
+          <p class="bilgi text-center"></p>
+          <br><hr><br>
+          <table class="table w-75 m-auto table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Surname</th>
+                <th scope="col">Email</th>
+                <th scope="col" class="px-5">Operation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>
+                    <button class="btn-edit" type="button"><i class="fa-regular fa-pen-to-square text-success"></i></button>
+                    <button class="btn-delete" type="button"><i class="fa-regular fa-trash-can text-danger"></i></button>
+                
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>
+                    <button class="btn-edit text-success"><i class="fa-regular fa-pen-to-square"></i></button>
+                    <button class="btn-delete text-danger"><i class="fa-regular fa-trash-can"></i></button>
+                
+                </td>
+              </tr>
+              
+              
+            </tbody>
+          </table>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="rehber.js"></script>
+</body>
+</html>
