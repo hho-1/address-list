@@ -5,10 +5,10 @@
     font-size: 1.2rem;
     background-color: transparent;
 }
-button.btn-primary{
+/* button.btn-primary{
     padding: 0.5rem 19rem;
     margin: auto;
-}
+} */
 button i.fa-regular{
     transition: all .5s;
     padding: 0 1rem;

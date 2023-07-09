@@ -13,7 +13,7 @@
     <div class="container mt-5">
         <h1 class="text-center mt-5">E-Mail Address Book</h1>
 
-        <form class="w-50 m-auto mt-5">
+        <form class="w-50 m-auto mt-5" id="form-rehber">
             <div class="mb-3">
               <label for="isim" class="form-label">Name</label>
               <input type="text" class="form-control" id="isim">
@@ -21,7 +21,12 @@
             </div>
             <div class="mb-3">
               <label for="soyisim" class="form-label">Surname</label>
-              <input type="email" class="form-control" id="soyisim">
+              <input type="text" class="form-control" id="soyisim">
+              
+            </div>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Phone</label>
+              <input type="number" class="form-control" id="phoneNumber">
               
             </div>
             <div class="mb-3">
@@ -31,24 +36,24 @@
             </div>
             
             
-            <button type="submit" class="btn btn-primary m-auto mt-3">Save</button>
+            <button type="submit" id="submitBtn" class="btn btn-primary m-auto mt-3 w-100">Save</button>
           </form>
           <br>
-          <p class="bilgi text-center"></p>
-          <br><hr><br>
+          <!-- <p class="bilgi text-center text-success">Saved successfully !</p>
+          <p class="bilgi text-center text-danger">Info could not be saved !!!!</p>
+          <br> --><hr><br>
           <table class="table w-75 m-auto table-striped">
             <thead>
               <tr>
-                <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Surname</th>
+                <th scope="col">Phone</th>
                 <th scope="col">Email</th>
                 <th scope="col" class="px-5">Operation</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
+            <tbody class="people-list">
+              <!-- <tr>
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
@@ -57,18 +62,7 @@
                     <button class="btn-delete" type="button"><i class="fa-regular fa-trash-can text-danger"></i></button>
                 
                 </td>
-              </tr>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>
-                    <button class="btn-edit text-success"><i class="fa-regular fa-pen-to-square"></i></button>
-                    <button class="btn-delete text-danger"><i class="fa-regular fa-trash-can"></i></button>
-                
-                </td>
-              </tr>
+              </tr> -->
               
               
             </tbody>
